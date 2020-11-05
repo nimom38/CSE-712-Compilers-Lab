@@ -1,0 +1,11 @@
+Please follow this steps:
+1) Open the terminal in linux.
+2) Go to the required directory.
+3) input the following commands.
+
+all: 
+  flex lexer_html.l
+  g++ lex.yy.c -o html.out
+clear:
+  rm -rf lex.yy.c
+  rm -rf html.out
